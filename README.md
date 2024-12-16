@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI-Powered Chatbot with Suggestions
 
-## Getting Started
+A simple and interactive AI-powered chatbot application built using **Next.js** with **TypeScript**. This chatbot provides users with suggested questions, and when a user picks one, the bot responds with pre-configured answers. If a question is not in the suggestions, the app uses the **OpenAI API** to generate an answer.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **AI-powered responses**: Uses OpenAI API to provide answers when user input is not in the suggestions.
+- **Suggested Questions**: Provides pre-configured questions for users to click and get immediate responses.
+- **Typing indicator**: Animates a "typing..." indicator to simulate a human response.
+- **Responsive chat UI**: The chat window opens in the bottom-right corner of the screen, ensuring a smooth user experience on all devices.
+- **Close chat**: Users can easily close the chat window by clicking the close button.
+- **TypeScript & Next.js**: The app is built with **Next.js** (latest version, App Router) and **TypeScript** to ensure type safety and scalability.
+  
+## Installation
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Follow these steps to set up the project locally.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Node.js (v16 or later)
+- npm or yarn
+- OpenAI API key (or replace with your own chatbot service)
 
-## Learn More
+### Setup
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/ai-chatbot-app.git
+    cd ai-chatbot-app
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Create a `.env` file in the root of the project and add your OpenAI API key:
+    ```
+    OPENAI_API_KEY=your-openai-api-key
+    ```
 
-## Deploy on Vercel
+4. Run the development server:
+    ```bash
+    npm run dev
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5. Visit `http://localhost:3000` to see the app in action!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Usage
+
+- The app features a chatbot interface with suggested questions like:
+  - "What are your business hours?"
+  - "How can I track my order?"
+  - "What is your refund policy?"
+
+- Users can either select a suggestion or type their own message. If a user selects a suggestion, the corresponding response will be shown. Otherwise, the app will query the OpenAI API for a response.
+
+## Architecture
+
+- **Frontend**: Built with **Next.js (App Router)** and **React**.
+- **API**: Utilizes **OpenAI API** to generate responses to user queries when they are not in the predefined suggestions.
+- **Styling**: Styled using **CSS Modules** for scoped and modular styles.
+
+## SEO Optimized Description
+
+This project is a **Next.js chatbot application** that integrates **AI-powered support** using the **OpenAI GPT API**. The bot is equipped with dynamic suggestion options and an intuitive chat interface. It is ideal for providing users with quick support, information, and assistance. Whether you need a basic FAQ system or an advanced conversational agent, this chatbot app serves as a solid starting point.
+
+The application is **responsive**, ensuring a seamless user experience on desktop and mobile. Users can chat with the bot, select from suggested questions, and even close the chat window whenever they need. This app demonstrates the power of integrating AI into modern web applications with ease.
+
+## Technologies Used
+
+- **Next.js** (v14+)
+- **React**
+- **TypeScript**
+- **OpenAI GPT API** for AI-powered responses
+- **CSS Modules** for styling
+- **Vercel** (for deployment, optional)
+
+## Contributions
+
+Feel free to fork this project, make improvements, and send pull requests! Contributions are always welcome.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Thanks to [OpenAI](https://openai.com/) for providing the powerful GPT API.
+- Thanks to the Next.js community for building an amazing framework!
