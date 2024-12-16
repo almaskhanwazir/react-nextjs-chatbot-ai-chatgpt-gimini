@@ -1,10 +1,10 @@
 # AI-Powered Chatbot with Suggestions
 
-A simple and interactive AI-powered chatbot application built using **Next.js** with **TypeScript**. This chatbot provides users with suggested questions, and when a user picks one, the bot responds with pre-configured answers. If a question is not in the suggestions, the app uses the **OpenAI API** to generate an answer.
+A simple and interactive AI-powered chatbot application built using **Next.js** with **TypeScript**. This chatbot provides users with suggested questions, and when a user picks one, the bot responds with pre-configured answers. If a question is not in the suggestions, the app uses the **GIMINI** to generate an answer.
 
 ## Features
 
-- **AI-powered responses**: Uses OpenAI API to provide answers when user input is not in the suggestions.
+- **AI-powered responses**: Uses GIMINI API to provide answers when user input is not in the suggestions.
 - **Suggested Questions**: Provides pre-configured questions for users to click and get immediate responses.
 - **Typing indicator**: Animates a "typing..." indicator to simulate a human response.
 - **Responsive chat UI**: The chat window opens in the bottom-right corner of the screen, ensuring a smooth user experience on all devices.
@@ -19,7 +19,7 @@ Follow these steps to set up the project locally.
 
 - Node.js (v16 or later)
 - npm or yarn
-- OpenAI API key (or replace with your own chatbot service)
+- GIMINI API key (or replace with your own chatbot service)
 
 ### Setup
 
@@ -34,9 +34,9 @@ Follow these steps to set up the project locally.
     npm install
     ```
 
-3. Create a `.env` file in the root of the project and add your OpenAI API key:
+3. Create a `.env` file in the root of the project and add your GIMINI API key:
     ```
-    OPENAI_API_KEY=your-openai-api-key
+    AI_API_KEY=your-ai-api-key
     ```
 
 4. Run the development server:
@@ -58,7 +58,7 @@ Follow these steps to set up the project locally.
 ## Architecture
 
 - **Frontend**: Built with **Next.js (App Router)** and **React**.
-- **API**: Utilizes **OpenAI API** to generate responses to user queries when they are not in the predefined suggestions.
+- **API**: Utilizes **GIMINI API** to generate responses to user queries when they are not in the predefined suggestions.
 - **Styling**: Styled using **CSS Modules** for scoped and modular styles.
 
 ## SEO Optimized Description
@@ -72,7 +72,7 @@ The application is **responsive**, ensuring a seamless user experience on deskto
 - **Next.js** (v14+)
 - **React**
 - **TypeScript**
-- **OpenAI GPT API** for AI-powered responses
+- **GIMINI  API** for AI-powered responses
 - **CSS Modules** for styling
 - **Vercel** (for deployment, optional)
 
@@ -86,5 +86,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- Thanks to [OpenAI](https://openai.com/) for providing the powerful GPT API.
+- Thanks to GIMINI for providing the powerful GPT API.
 - Thanks to the Next.js community for building an amazing framework!
